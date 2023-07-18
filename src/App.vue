@@ -32,3 +32,25 @@ const auth = useAuthStore();
     </v-layout>
   </v-card>
 </template>
+
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5e35b1;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #502d96;
+}
+</style>
