@@ -1,5 +1,15 @@
 # realestate-vue
 
+This project works as a Real Estate page where we can find properties and their location, we can log and use Admin panel and upload more properties, we can delete them, edit them and check all the info. 🏡
+
+This project is a Fullstack Project, working with Firestore and Vue 3 (Composition API).
+
+This project is using Vue-router 🛣️, Pinia 🍍, Composables 📈, Firestore 🔥, Vuefire 💚🔥 and Vuetify 💙.
+
+This idea is from a course made it by Juan de la Torre (Udemy) 🤓.
+
+## Vue 3 + Vite
+
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
