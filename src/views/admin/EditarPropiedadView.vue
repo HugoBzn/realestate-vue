@@ -12,7 +12,7 @@ import { validationSchema } from '@/validation/propiedadSchema';
 
 const items = [1, 2, 3, 4, 5];
 
-const { uploadImage, image } = useImage();
+const { url, uploadImage, image } = useImage();
 const { zoom, center, pin } = useLocationMap();
 
 const { handleSubmit } = useForm({ validationSchema });
@@ -48,7 +48,8 @@ watch(propiedad, (propiedad) => {
 const submit = handleSubmit(async (values) => {
   const { imagen, ...propiedad } = values;
   if (image.value) {
-    console.log('Hay una imagen nueva');
+    const data = { ...propiedad, imagen: url.value, ubicacion: center.value };
+    await updateDoc(docRef, data);
   } else {
     const data = { ...propiedad, ubicacion: center.value };
     await updateDoc(docRef, data);
