@@ -8,7 +8,7 @@ const { propiedadesCollection, propertyPrice } = usePropiedades();
 <template>
   <h1 class="text-center text-h3 font-weight-bold my-5">Nuestras propiedades</h1>
 
-  <vcard flat class="py-10">
+  <v-card flat class="py-10">
     <v-row>
       <Propiedad
         v-for="propiedad in propiedadesCollection"
@@ -17,5 +17,5 @@ const { propiedadesCollection, propertyPrice } = usePropiedades();
         :price="propertyPrice"
       />
     </v-row>
-  </vcard>
+  </v-card>
 </template>
