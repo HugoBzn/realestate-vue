@@ -3,7 +3,7 @@ import Propiedad from '../components/Propiedad.vue';
 import usePropiedades from '../composables/usePropiedades';
 import { propertyPrice } from '../helpers';
 
-const { alberca, propiedadesFiltradas } = usePropiedades();
+const { alberca, filteredItems } = usePropiedades();
 </script>
 
 <template>
@@ -17,7 +17,7 @@ const { alberca, propiedadesFiltradas } = usePropiedades();
   <v-card flat class="py-10">
     <v-row>
       <Propiedad
-        v-for="propiedad in propiedadesFiltradas"
+        v-for="propiedad in filteredItems"
         :key="propiedad.id"
         :propiedad="propiedad"
         :price="propertyPrice"
