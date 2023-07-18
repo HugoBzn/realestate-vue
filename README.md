@@ -4,7 +4,7 @@ This project works as a Real Estate page where we can find properties and their 
 
 This project is a Fullstack Project, working with Firestore and Vue 3 (Composition API).
 
-This project is using Vue-router 🛣️, Pinia 🍍, Composables 📈, Firestore 🔥, Vuefire 💚🔥 and Vuetify 💙.
+This project is using Vue-router 🛣️, Pinia 🍍, Composables 📈, Firestore 🔥, Vuefire 💚🔥, Vuetify 💙 and Leaflet 🌎️.
 
 This idea is from a course made it by Juan de la Torre (Udemy) 🤓.
 
